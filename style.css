@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'DM Serif Display', serif;
+	font-size: 16px;
+}
+@media (max-width: 600px){
+	body{
+		text-align: center;
+	}
+}
+
+nav{
+	padding: 15px;
+	text-transform: uppercase;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	overflow: hidden;
+	font-size: 14px;
+	z-index: 99;
+}
+.navbar{
+     margin-bottom: 0px;
+}
+nav ul li a{
+	color:  hsl(273, 4%, 51%);
+	padding-right: 10px;
+
+}
+
+nav ul li a:hover{
+    color: hsl(216, 30%, 68%);
+}
+
+.btn{
+	font-size: 16px;
+	padding: 5px 25px;
+	color:hsl(256, 26%, 20%);
+	border:2px solid hsl(256, 26%, 20%);
+	margin-top: 8px;
+	text-transform: uppercase;
+	border-radius: 0px;
+	margin-left: 10px;
+}
+.btn:hover{
+	color: #fff;
+	background-color:hsl(256, 26%, 20%);
+	 
+	border:2px solid hsl(256, 26%, 20%);
+}
+/********************************Small screem nav bar***************************/
+@media screen and (max-width: 600px){
+	nav{
+		padding: 0px;
+		text-align: center;
+		}
+	#mynav{
+		background-color: hsl(270, 9%, 17%);
+	}
+	.navbar-default .navbar-nav>li>a{
+		color: #fff;
+	}
+	.navbar-default .navbar-nav>li>a:hover{
+		color: #000;
+	}
+	.btn-default{
+		background-color: hsl(270, 9%, 17%);
+		border:1px solid #fff;
+		color: #fff;
+	}
+}
+/********************************End******************************************/
+#home{
+	background-color: hsl(256, 26%, 20%);
+	color: #fff;
+	height: 550px;
+	width: 100%;
+}
+
+
+#home h1{
+	font-size: 60px;
+	margin-top: 50px;
+}
+.bord{
+	border-top: 1px solid #fff;
+	margin-top: 120px;
+	width: 150px;
+}
+.img{
+	margin-top: 120px;
+	position: relative;
+    z-index: 1;
+    width: 85%;
+}
+.top-right{
+	position: absolute;
+	top: -105px;
+	right: -85px;
+	z-index:9;
+}
+.intro-left{
+	position: absolute;
+	top: 425px;
+	left: -90px;
+
+}
+.para{
+	padding-top:10px; 
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+}
+.home-btn{
+	font-size: 16px;
+	padding: 5px 25px;
+	color:#fff;
+	border:2px solid #fff;
+	margin-top: 8px;
+	text-transform: uppercase;
+	background-color:hsl(256, 26%, 20%) ;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	border-radius: 0px;
+}
+.home-btn:hover{
+	background-color: #fff;
+	color: hsl(256, 26%, 20%);
+}
+.mob{
+      display: none;
+}
+.home-mob-down{
+	display: none;
+}
+/***********************************************Home small screen********************************************/
+@media screen and (max-width: 600px){
+	#home{
+		background-color: #fff;
+		height: auto;
+	}
+	.mob{
+		display: block;
+		width: 100%;
+	}
+	.home-mob{
+		display: none;
+	}
+	.home-mob-down{
+		display: block;
+		background-color: hsl(256, 26%, 20%);
+		height: 500px;
+		margin-top: 5px;
+		overflow: hidden;
+		margin-bottom: 150px;
+	}
+	.bord{
+		display: none;
+	}
+}
+/*************************************************End*************************************************************/
+#differ h1{
+	font-size: 70px;
+	margin-top: 50px;
+}
+.bord-down{
+	border-top: 1px solid hsl(256, 26%, 20%);
+	margin-top: 350px;
+	width: 150px;
+}
+.ico{
+	margin-top: 60px;
+}
+#differ h2{
+	margin-top: 30px;
+}
+.diffpara{
+	font-family: 'Karla', sans-serif;
+	color: hsl(273, 4%, 51%);
+	margin-top: 25px;
+}
+/****************************************************Different mob diplay*******************/
+@media screen and (max-width: 600px){
+	.bord-down {
+          margin: auto;
+	}
+}
+/*****************************************************END***************************************/
+#findout{
+	margin-top: 150px;
+	height: auto;
+	width: 100%;
+}
+#findout p{
+	font-size: 50px;
+}
+.bg{
+	padding: 70px 70px;
+	background-color: hsl(256, 26%, 20%);
+	color: #fff;
+	line-height: 1;
+	background-image: url(images/bg-pattern-how-we-work-desktop.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: right top;
+}
+.work-btn{
+     font-size: 16px;
+	padding: 15px 25px 15px 25px;
+	color:#fff;
+	border:2px solid #fff;
+	margin-top: 8px;
+	text-transform: uppercase;
+	background-color:hsl(256, 26%, 20%) ;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	
+}
+.work-btn:hover{
+	background-color: #fff;
+	color: hsl(256, 26%, 20%);
+}
+
+#findout button{
+	margin-left: 250px;
+}
+@media screen and (max-width: 600px){
+	.bg{
+		background-image: url(images/bg-pattern-how-we-work-mobile.png);
+	}
+	.work-btn{
+		margin-top: 25px;
+		width: 200px; 
+	}
+	#findout button{
+		margin-left: 0px;
+	}
+
+	}
+footer{
+	background-color: hsl(0, 0%, 98%);
+	margin-top: 150px;
+	background-image: url(images/bg-pattern-footer-desktop.png);
+	background-repeat: no-repeat;
+font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	
+}
+.fot-up{
+	margin-top: 60px;
+}
+.fot-ico{
+	float: right;
+}
+.pad-ico{
+	margin-right: 10px;
+}
+.pad-ico:hover{
+	background:  hsl(256, 26%, 20%);
+}
+
+footer h5{
+	color:  hsl(273, 4%, 51%);
+	margin-bottom: 30px;
+}
+footer p{
+	color: hsl(270, 9%, 17%);
+	font-size: 14px;
+}
+footer p:hover{
+	text-decoration: underline;
+}
+@media screen and (max-width: 600px){
+	.fot-ico{
+		margin-top: 40px;
+		float: none;
+	}
+	footer h5{
+		font-weight: 700;
+		margin-top: 35px;
+	}
+}
